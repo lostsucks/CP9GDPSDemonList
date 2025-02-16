@@ -46,5 +46,36 @@
         <router-view></router-view>
         <footer></footer>
         <script type="module" src="/CP9GDPSDemonList/js/main.js"></script>
+        <script>
+            const suppressedErrors = [
+                "interest-cohort",
+                "run-ad-auction",
+                "join-ad-interest-group",
+                "browsing-topics",
+                "net::ERR_BLOCKED_BY_CLIENT"
+            ];
+    
+            const originalConsoleError = console.error;
+            console.error = function() {
+                if (arguments.length) {
+                    const message = arguments[0].toString();
+                    if (suppressedErrors.some(error => message.includes(error))) {
+                        return;
+                    }
+                }
+                originalConsoleError.apply(console, arguments);
+            };
+    
+            const originalConsoleWarn = console.warn;
+            console.warn = function() {
+                if (arguments.length) {
+                    const message = arguments[0].toString();
+                    if (suppressedErrors.some(error => message.includes(error))) {
+                        return;
+                    }
+                }
+                originalConsoleWarn.apply(console, arguments);
+            };
+        </script>
     </body>
 </html>

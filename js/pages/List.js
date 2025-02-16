@@ -60,7 +60,7 @@ export default {
                             </div>
                             <div class="link">
                                 <a :href="record.link">
-                                    <img src="/assets/video.svg" alt="Video">
+                                    <img src="/CP9GDPSDemonList/assets/video.svg" alt="Video">
                                 </a>
                             </div>
                         </template>
@@ -73,15 +73,15 @@ export default {
                     <h3>List Editors</h3>
                     <ul class="editors">
                         <li>
-                            <img src="/assets/crown.svg" alt="Owner">
+                            <img src="/CP9GDPSDemonList/assets/crown.svg" alt="Owner">
                             <p>NK87</p>
                         </li>
                         <li>
-                            <img src="/assets/user-gear.svg" alt="Helper">
+                            <img src="/CP9GDPSDemonList/assets/user-gear.svg" alt="Helper">
                             <p>hamptonix</p>
                         </li>
                         <li>
-                            <img src="/assets/code.svg" alt="Developer">
+                            <img src="/CP9GDPSDemonList/assets/code.svg" alt="Developer">
                             <p>lostsucks</p>
                         </li>
                     </ul>
