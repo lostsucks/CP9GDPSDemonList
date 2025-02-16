@@ -1,43 +1,43 @@
 .page-leaderboard {
-    max-width: 96rem;
-    margin: 0 auto;
-    grid-template-columns: 1fr 2fr;
+  max-width: 96rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
 }
 .page-leaderboard .board-container,
 .page-leaderboard .player-container {
-    padding-block: 2rem;
+  padding-block: 2rem;
 }
 .page-leaderboard .player {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 48rem;
 }
 .page-leaderboard .player .table {
-    display: grid;
-    grid-template-columns: max-content 2fr 1fr max-content;
-    grid-auto-rows: max-content;
-    align-items: center;
-    column-gap: 2rem;
+  display: grid;
+  grid-template-columns: max-content 2fr 1fr max-content;
+  grid-auto-rows: max-content;
+  align-items: center;
+  column-gap: 2rem;
 }
 .page-leaderboard .player .table p {
-    padding-block: 1rem;
+  padding-block: 1rem;
 }
 .page-leaderboard .player .table .rank,
 .page-leaderboard .player .table .score {
-    justify-self: end;
+  justify-self: end;
 }
 .page-leaderboard .player .table a {
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background-color;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color;
 }
 .page-leaderboard .player .table a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=leaderboard.css.map */

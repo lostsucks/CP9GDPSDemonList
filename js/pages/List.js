@@ -69,39 +69,20 @@ export default {
             </div>
             <div class="meta-container">
                 <div class="meta">
+                    <p>Credits to TheShittyList for the website layout.</p>
                     <h3>List Editors</h3>
                     <ul class="editors">
                         <li>
                             <img src="/assets/crown.svg" alt="Owner">
-                            <p>IRaily</p>
+                            <p>NK87</p>
                         </li>
                         <li>
                             <img src="/assets/user-gear.svg" alt="Helper">
-                            <p>AcropolisBoy</p>
-                        </li>
-                        <li>
-                            <img src="/assets/user-gear.svg" alt="Helper">
-                            <p>SupaX_</p>
-                        </li>
-                        <li>
-                            <img src="/assets/user-gear.svg" alt="Helper">
-                            <p>ExtremeBeemon</p>
-                        </li>
-                        <li>
-                            <img src="/assets/user-gear.svg" alt="Helper">
-                            <p>hex</p>
-                        </li>
-                        <li>
-                            <img src="/assets/user-gear.svg" alt="Helper">
-                            <p>Davine_007</p>
+                            <p>hamptonix</p>
                         </li>
                         <li>
                             <img src="/assets/code.svg" alt="Developer">
-                            <p>Electro</p>
-                        </li>
-                        <li>
-                            <img src="/assets/code.svg" alt="Developer">
-                            <p>Prometheus</p>
+                            <p>lostsucks</p>
                         </li>
                     </ul>
                     <h3>Submission Requirements</h3>
@@ -119,12 +100,6 @@ export default {
                     </p>
                     <p>
                         Do not use secret routes or bug routes
-                    </p>
-                    <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
-                    </p>
-                    <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
                     </p>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 :root {
-    --color-background: white;
-    --color-on-background: black;
-    --color-primary: #0066ff;
-    --color-on-primary: white;
+    --color-background: rgb(33, 36, 40);
+    --color-on-background: rgb(255, 255, 255);
+    --color-primary: #7146e7;
+    --color-on-primary: rgb(255, 255, 255);
 }
 
 $background-color: var(--color-background);

@@ -27,6 +27,24 @@ header {
     }
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background); // Matches your background color
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2); // Slightly visible but not too bright
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3); // Slightly brighter on hover
+}
+
+
 main {
     height: 0;
     flex: 1;

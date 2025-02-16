@@ -1,52 +1,69 @@
 :root {
-    --color-background: white;
-    --color-on-background: black;
-    --color-primary: #0066ff;
-    --color-on-primary: white;
+  --color-background: rgb(33, 36, 40);
+  --color-on-background: rgb(255, 255, 255);
+  --color-primary: #7146e7;
+  --color-on-primary: rgb(255, 255, 255);
 }
 
 body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-color: var(--color-background);
-    color: var(--color-on-background);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
 }
 
 header,
 main {
-    display: grid;
-    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(16em, 1fr);
-    column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(16em, 1fr);
+  column-gap: 1.5rem;
 }
 
 header {
-    height: 4rem;
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
+  height: 4rem;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }
 header .logo {
-    justify-self: end;
-    align-self: center;
+  justify-self: end;
+  align-self: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 main {
-    height: 0;
-    flex: 1;
-    display: grid;
-    grid-template-rows: minmax(0, 1fr);
-    column-gap: 2rem;
+  height: 0;
+  flex: 1;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  column-gap: 2rem;
 }
 main > div {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
 }
 
 /*# sourceMappingURL=main.css.map */
