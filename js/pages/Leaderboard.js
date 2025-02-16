@@ -45,7 +45,7 @@ export default {
                             <p>{{ score.level }}</p>
                             <p class="score">+{{ localize(score.score) }}</p>
                             <a :href="score.link">
-                                <img src="/assets/video.svg" alt="Video">
+                                <img src="/assets/video.svg" alt="Video" style="filter: invert(1)">
                             </a>
                         </templa>
                     </div>
@@ -56,7 +56,7 @@ export default {
                             <p>{{ score.level }}</p>
                             <p class="score">+{{ localize(score.score) }}</p>
                             <a :href="score.link">
-                                <img src="/assets/video.svg" alt="Video">
+                                <img src="/assets/video.svg" alt="Video" style="filter: invert(1)">
                             </a>
                         </template>
                     </div>

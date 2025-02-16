@@ -101,6 +101,7 @@ export default {
                     <p>
                         Do not use secret routes or bug routes
                     </p>
+                    <h4>Submit in our discord server!</h4>
                 </div>
             </div>
         </main>

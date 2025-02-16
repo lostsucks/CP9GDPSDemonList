@@ -46,7 +46,6 @@ a {
 }
 
 img {
-  filter: invert(1);
   display: block;
 }
 
