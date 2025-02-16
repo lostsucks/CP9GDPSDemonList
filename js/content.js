@@ -7,10 +7,16 @@ const dir = '/CP9GDPSDemonList/data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
+    if (!listResult.ok) {
+        throw new Error(`Failed to fetch list: ${listResult.statusText}`);
+    }
     const list = await listResult.json();
     return await Promise.all(
         list.map(async (path) => {
             const levelResult = await fetch(`${dir}/${path}.json`);
+            if (!levelResult.ok) {
+                throw new Error(`Failed to fetch level: ${levelResult.statusText}`);
+            }
             const level = await levelResult.json();
             return {
                 ...level,
