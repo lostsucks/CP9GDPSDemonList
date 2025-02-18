@@ -1,7 +1,7 @@
 /**
  * Numbers of decimal digits to round to
  */
-const scale = 3;
+const scale = 1;
 
 /**
  * Calculate the score awarded when having a certain percentage on a list level
@@ -11,7 +11,7 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 150) {
+    if (rank > 25) {
         return 0;
     }
 
