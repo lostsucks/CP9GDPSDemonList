@@ -8,20 +8,19 @@ export async function fetchList() {
         throw new Error(`Failed to fetch list: ${listResult.statusText}`);
     }
     const list = await listResult.json();
-    return await Promise.all(
-        list.map(async (path) => {
-            const levelResult = await fetch(`${dir}/${path}.json`);
-            if (!levelResult.ok) {
-                throw new Error(`Failed to fetch level: ${levelResult.statusText}`);
-            }
-            const level = await levelResult.json();
-            return {
-                ...level,
-                path,
-                records: level.records.sort((a, b) => b.percent - a.percent),
-            };
-        })
-    );
+    const fetchLevel = async (path) => {
+        const levelResult = await fetch(`${dir}/${path}.json`);
+        if (!levelResult.ok) {
+            throw new Error(`Failed to fetch level: ${levelResult.statusText}`);
+        }
+        const level = await levelResult.json();
+        return {
+            ...level,
+            path,
+            records: level.records.sort((a, b) => b.percent - a.percent),
+        };
+    };
+    return await Promise.all(list.map(fetchLevel));
 }
 
 export async function fetchLeaderboard() {
